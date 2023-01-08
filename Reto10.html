@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSVanillaIReto10</title>
+</head>
+<body>
+    <script>
+        var ventas = Number(prompt('Introduce el número de ventas'));
+        var importe;
+        var total = 0;
+
+        for (i=1; i<=ventas; i++){
+            importe = Number(prompt('Introduce importe de venta'));
+            total = total+importe;
+        }
+        alert ('La suma total de los importes es '+total+' €');
+    </script>
+</body>
+</html>

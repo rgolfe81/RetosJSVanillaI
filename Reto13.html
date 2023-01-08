@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSVanillaIReto13</title>
+</head>
+<body>
+    <h2>Calculadora Inversa</h2>
+    <h4>Operaciones a realizar</h4>
+    <p>
+        + sumar<br>
+        - restar<br>
+        * multiplicar<br>
+        / dividir<br>
+        ^ base, exponente<br>
+        % modulo, resto división
+    </p>
+    <script>
+        var int1 = Number (prompt('Introduce el primer valor'));
+        var int2 = Number (prompt('Introduce el segundo valor'));
+        var operacion = prompt ('Introduce una operación a realizar');
+        var resultado;
+        switch (operacion){
+            case '+':
+                resultado = int1+int2;
+                alert ('El valor de la suma es : '+resultado);
+                break;
+            case '-':
+                resultado = int1-int2;
+                alert ('El valor de la resta es : '+resultado);
+                break;
+            case '*':
+                resultado = int1*int2;
+                alert ('El valor del producto es : '+resultado);
+                break;
+            case '/':
+                resultado = int1/int2;
+                alert ('El valor de la división es : '+resultado);
+                break;
+            case '^':
+                resultado = Math.pow(int1, int2); // función que calcula la base int1 a la potencia int2
+                alert ('El valor de la base al exponente indicado es : '+resultado);
+                break;
+            case '%':
+                resultado = int1%int2;
+                alert ('El valor del resto de la división es : '+resultado);
+                break;
+            default:
+                alert ('La operación indicada no está en el menú');
+                break;
+        }
+    </script>
+</body>
+</html>
